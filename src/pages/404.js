@@ -20,7 +20,7 @@ export default function Homepage() {
         <body>
             <Box className={classes.textbox}>
                 <Typography className={classes.text}>
-                    Hello, World!
+                    404 Not Found
                 </Typography>
             </Box>
         </body>
