@@ -7,11 +7,14 @@ import { createMuiTheme, MuiThemeProvider } from '@material-ui/core';
 const theme = createMuiTheme({
   palette: {
     primary: {
-      light: '#ffffff',
-      main: '#ffffff',
+      light: '#bebebe',
+      main: '#5c5c5c',
       dark: '#000000'
+    },
+    secondary: {
+      main: '#ffffff'
     }
-  }
+  },
 })
 
 ReactDOM.render(

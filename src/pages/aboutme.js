@@ -14,13 +14,13 @@ const useStyles = makeStyles((theme) => ({
     }
 }))
 
-export default function Homepage() {
+export default function AboutMe() {
     const classes = useStyles();
     return (
         <body>
             <Box className={classes.textbox}>
                 <Typography className={classes.text}>
-                    Hello, World!
+                        About Me
                 </Typography>
             </Box>
         </body>
