@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
         margin: "2vw",
     },
     text : {
-        fontSize: "6vw",
+        fontSize: "10vw",
         fontFamily: "arial",
         color: "#BEBEBE"
     }
@@ -20,7 +20,7 @@ export default function Homepage() {
         <body>
             <Box className={classes.textbox}>
                 <Typography className={classes.text}>
-                    Hello, World!
+                        Carly Dobie
                 </Typography>
             </Box>
         </body>
