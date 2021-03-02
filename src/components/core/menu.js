@@ -1,8 +1,9 @@
 import React from 'react';
 // import { Link } from 'react-router-dom'
-import Link from '@material-ui/core/Link'
+// import Link from '@material-ui/core/Link'
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
+import { HashRouter, NavLink } from 'react-router-dom';
 
 export default function MyMenu(props) {
 
@@ -21,18 +22,20 @@ export default function MyMenu(props) {
                 open={props.open}
                 onClose={handleClose}
                 >
-                <MenuItem href='/aboutme' component={Link} onClick={handleClose}>
+                <HashRouter>
+                <MenuItem to='/aboutme' component={NavLink} onClick={handleClose}>
                     About Me
                 </MenuItem>
-                <MenuItem href="/workexperience" component={Link} onClick={handleClose}>
+                <MenuItem to="/workexperience" component={NavLink} onClick={handleClose}>
                     Work Experience
                 </MenuItem>
-                <MenuItem href="/currentprojects" component={Link} onClick={handleClose}>
+                <MenuItem to="/currentprojects" component={NavLink} onClick={handleClose}>
                     Current Projects
                 </MenuItem>
-                <MenuItem href="/contactinfo" component={Link} onClick={handleClose}>
+                <MenuItem to="/contactinfo" component={NavLink} onClick={handleClose}>
                     Contact Info
                 </MenuItem>
+                </HashRouter>
             </Menu>
         </div>
     );
